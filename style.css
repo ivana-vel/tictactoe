@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Sigmar';
+    src: url('Sigmar/Sigmar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    background-color: rgb(160, 211, 238);
+    font-family: 'Sigmar';
+}
+
+#h1{
+    text-align: center;
+    font-size: 47px;
+    color: rgb(25, 41, 162);
+}
+
+.cell{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(160, 211, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.x{
+    width: 150px;
+    height: 150px;
+    visibility: hidden;
+}
+
+.o{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    width: 475px;
+    margin: auto;
+    gap: 15px;
+    background-color: rgb(42, 10, 105);
+}
+
+#zadnjidio{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(35, 50, 159);
+}
+
+#restartBtn{
+    height: 70px;
+    width: 145px;
+    font-family: 'Sigmar';
+    text-align: center;
+    font-size: 25px;
+    border-radius: 12px;
+    border-color: rgb(25, 41, 162);
+    border-width: 5px;
+    background-color: rgb(104, 194, 243);
+    color: rgb(18, 33, 149);
+}
+
+.pickCell{
+    position: relative;
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
